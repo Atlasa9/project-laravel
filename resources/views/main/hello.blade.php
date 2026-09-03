@@ -5,7 +5,7 @@
     <tr>
       <th scope="col">Date</th>
       <th scope="col">Name</th>
-      <th scope="col">SortDesc</th>
+      <th scope="col">shortDesc</th>
       <th scope="col">Desc</th>
       <th scope="col">Image</th>
     </tr>
