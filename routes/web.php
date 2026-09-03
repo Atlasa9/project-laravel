@@ -21,7 +21,7 @@ Route::get('/about', function () {
     return view('main/about');
 });
 
-Route::get('/contact' function(){
+Route::get('/contact', function (){
     $contact = [
         'name' => 'Polytech',
         'adres' => 'B.Semenovskay',
@@ -29,4 +29,4 @@ Route::get('/contact' function(){
         'email' => '@mospolytech.ru'
     ];
     return view('main/contact', ['contact' => $contact]);
-})
+});

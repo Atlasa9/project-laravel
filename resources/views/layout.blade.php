@@ -40,4 +40,7 @@
       @yield('content')
     </div>
   </main>
+  <footer>
+    Климова Алена Яновна, группа 243-321
+  </footer>
 </html>
