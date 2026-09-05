@@ -22,7 +22,6 @@ Route::resource('article', ArticleController::class);
 //     Route::get('/store', [ArticleController::class, 'store']);
 // });
 
-
 Route::get('/signup', [AuthController::class, 'create']);
 Route::post('/auth/login', [AuthController::class, 'signUp']);
 Route::get('/', [MainController::class, 'index']);
