@@ -1,7 +1,7 @@
 @extends('layout')
 @section('content')
-    <form action="auth/login" method="post">
-    <div class="form-group">
+<form action="auth/login" method="post">
+  <div class="form-group">
     <label for="exampleInputPassword1">Name</label>
     <input name="name" type="text" class="form-control" id="" placeholder="Enter your name">
   </div>
