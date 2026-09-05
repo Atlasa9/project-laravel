@@ -17,7 +17,7 @@
       <td>{{$article['name']}}</td>
       <td>{{$article['shortDesc']}}</td>
       <td>{{$article['desc']}}</td>
-      <td>{{$article['preview_image']}}</td>
+      <td><a href="/galery/{{$article['full_image']}}"><img src="{{URL::asset('/images/'.$article['preview_image'])}}" alt= "" height="100" width="100"></a></td>
     </tr>
     @endforeach
   </tbody>
