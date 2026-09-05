@@ -14,10 +14,10 @@
     @foreach($articles as $article)
     <tr>
       <th scope="row">{{$article['date']}}</th>
-      <td> {{$article['name']}}</td>
-      <td> {{$article['shortDesc']}}</td>
-      <td> {{$article['desc']}}</td>
-      <td> {{$article['preview_image']}}</td>
+      <td>{{$article['name']}}</td>
+      <td>{{$article['shortDesc']}}</td>
+      <td>{{$article['desc']}}</td>
+      <td>{{$article['preview_image']}}</td>
     </tr>
     @endforeach
   </tbody>
