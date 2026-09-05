@@ -38,11 +38,10 @@
         <li class="nav-item">
         <a class="nav-item" href="/auth/login">SignIn</a>
       </li>
-  </div>
+     </div>
     </ul>
   </div>
-  
-</nav>
+  </nav>
   </header>
   <main>
     <div class="container">
