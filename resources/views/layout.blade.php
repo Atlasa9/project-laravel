@@ -33,11 +33,11 @@
       </li>
     </div>
     <div class="navbar-nav d-flex justify-content-end">
-        <li class="nav-item">
+        <li class="nav-link">
         <a class="nav-item" href="/signup">SignUp</a>
       </li>
         <li class="nav-item">
-        <a class="nav-item" href="/auth/login">SignIn</a>
+        <a class="nav-link" href="/auth/login">SignIn</a>
       </li>
      </div>
     </ul>
