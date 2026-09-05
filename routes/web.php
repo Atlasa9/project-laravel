@@ -14,6 +14,7 @@ use App\Http\Controllers\AuthController;
 |
 */
 Route::get('/signup', [AuthController::class, 'create']);
+Route::post('/auth/login', [AuthController::class, 'signUp']);
 Route::get('/', [MainController::class, 'index']);
 Route::get('/galery/{full_image}', [MainController::class, 'show']);
 
