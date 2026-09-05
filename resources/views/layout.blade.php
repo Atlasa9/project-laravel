@@ -31,8 +31,14 @@
       <li class="nav-item">
         <a class="nav-link" href="contact">Contacts</a>
       </li>
+    <div class="navbar-nav d-flex justify-content-end">
+        <li class-"nav-item">
+          <a class="nav-item" href="/signin">Signin</a>
+        </li>
+  </div>
     </ul>
   </div>
+  
 </nav>
   </header>
   <main>
