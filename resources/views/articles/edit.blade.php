@@ -1,7 +1,8 @@
 @extends('layout')
 @section('content')
-<form action="article/update" method="post">
+<form action="/article/{{$article->id}}" method="post">
   @csrf
+  @method('PUT')
   <div class="form-group">
     <label for="exampleInputPassword1">Date public</label>
     <input name="datePublic" type="date" class="form-control" id="" value="{{$article->datePublic}}">
@@ -16,7 +17,7 @@
   </div>
     <div class="form-group">
     <label for="exampleInputPassword1">Description</label>
-    <input name="desc" type="text" class="form-control" id="exampleInputPassword1" value="{{$article->desc}}">
+    <textarea name="desc" class="form-control">{{$article->desc}}</textarea>
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
