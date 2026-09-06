@@ -40,19 +40,19 @@ class AuthController extends Controller
 
     public function customLogin(Request $request){
         $request->validate([
-            'email'=>'required|email|unique:App\Models\User',
+            'email'=>'required|email',
             'password'=>'required|min:6',
-            'email' => ['required', 'email'],
-            'password' => ['required'],
         ]);
+
         $credentials=[
             'email'=>request('email'),
             'password'=>request('password'),
         ];
 
-        if(Auth::attempt($credentials)){
+        if(!Auth::attempt($credentials)){
         return response('Bad login', 401);
         }
+       
         $user=User::where('email', request('email'))->first();
         $token=$user->createToken('myAppToken');
         $response=[

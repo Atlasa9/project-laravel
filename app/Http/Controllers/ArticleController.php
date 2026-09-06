@@ -4,8 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Article;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Mail;
-use App\Mail\ArticleMail;
 use App\Jobs\VeryLongJob;
 
 
@@ -83,6 +81,7 @@ class ArticleController extends Controller
         return response()->json($article, 201);
     }
 
+    
     /**
      * Update the specified resource in storage.
      *
