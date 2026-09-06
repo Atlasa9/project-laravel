@@ -18,7 +18,7 @@ class ArticleController extends Controller
     {
         $articles=Article::latest()->paginate(5);
         //return view('articles/index', ['articles' => $articles]);
-        return response()->json($article, 201);
+        return response()->json($articles, 201);
     }
 
     /**
@@ -43,6 +43,7 @@ class ArticleController extends Controller
         $request->validate([
             'datePublic'=>'required',
             'title'=>'required',
+            'shortDesc'=>'required',
             'desc'=>'required'
         ]);
 
