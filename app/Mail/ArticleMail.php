@@ -30,7 +30,7 @@ class ArticleMail extends Mailable
      */
     public function build()
     {
-        return $this->from(env('MAIL_FROM_ADDRESS'))
+        return $this->from(env('MAIL_USERNAME'))
                     ->to('viepurple@yandex.ru')
                     ->with('article', $this->article)
                     ->view('mail.article');
