@@ -1,4 +1,3 @@
-
 @extends('layout')
 @section('content')
 <div class="card" style="width: 38rem;">
