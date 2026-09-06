@@ -50,12 +50,19 @@
       </li>
     </div>
     <div class="navbar-nav d-flex justify-content-end">
-        <li class="nav-link">
+      @guest  
+      <li class="nav-link">
         <a class="nav-item" href="/auth/create">SignUp</a>
       </li>
         <li class="nav-item">
         <a class="nav-link" href="/auth/login">SignIn</a>
       </li>
+      @endguest
+      @auth
+      <li class="nav-item">
+        <a class="nav-link" href="/auth/logout">Logout</a>
+      </li>
+      @endauth
      </div>
     </ul>
 
