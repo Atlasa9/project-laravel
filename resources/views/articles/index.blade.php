@@ -20,5 +20,7 @@
 @endforeach
     </tbody>
 </table>
-{{$articles->links()}}
+    <div class="mt-3">
+        {{$articles->links()}}
+    </div>
 @endsection
