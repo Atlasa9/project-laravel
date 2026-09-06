@@ -12,7 +12,7 @@
     <style>
 
       </style>
-
+    
     <style>
         body {
           font-family: 'Nunito', sans-serif;
@@ -51,7 +51,7 @@
     </div>
     <div class="navbar-nav d-flex justify-content-end">
         <li class="nav-link">
-        <a class="nav-item" href="/signup">SignUp</a>
+        <a class="nav-item" href="/auth/create">SignUp</a>
       </li>
         <li class="nav-item">
         <a class="nav-link" href="/auth/login">SignIn</a>

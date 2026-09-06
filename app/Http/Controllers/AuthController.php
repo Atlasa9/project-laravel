@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use Hash;
+use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
@@ -46,8 +48,9 @@ class AuthController extends Controller
             return redirect('/');
         }
         return back()->withErrors([
-            'email'=>'The provided credentials do not math out records.'
+            'email'=>'The provided credentials do not match out records.'
         ]);
+        }
 
         public function logout(Request $request){
             Auth::logout();
@@ -55,5 +58,5 @@ class AuthController extends Controller
             $request->session()->regenerateToken();
             return redirect('/');
         }
-    }
 }
+
