@@ -12,7 +12,7 @@
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Short description</label>
-    <input name="shortDesc" type="text" class="form-control" id="exampleInputPassword1" value="{{$article->shorDesc}}">
+    <input name="shortDesc" type="text" class="form-control" id="exampleInputPassword1" value="{{$article->shortDesc}}">
   </div>
     <div class="form-group">
     <label for="exampleInputPassword1">Description</label>
